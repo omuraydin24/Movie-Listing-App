@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { View, Text, ActivityIndicator, FlatList, StatusBar, TouchableOpacity } from 'react-native';
 
 import useFetch from '../../hooks/useFetch';
@@ -11,11 +11,6 @@ const FilterCard = ({ movieData, sendData, setModalVisible, modalVisible }) => {
     error,
     data: categoryData
   } = useFetch(URL)
- 
-  // const handleClick = () => {
-  //   const additionalData = { name: "All Movies", id: "1" }
-  //   setFilterData([...filterdata, additionalData])
-  // }
 
   if (loading) {
     return <View style={styles.loading}>
@@ -36,13 +31,14 @@ const FilterCard = ({ movieData, sendData, setModalVisible, modalVisible }) => {
     sendData(movieList)
   }
 
+
+
   const renderFilters = ({ item }) => {
     return (
       <TouchableOpacity onPress={() => {
         return (
           onSelectGenre(item),
           setModalVisible(!modalVisible)
-          // handleClick()
         )
       }} >
         <View style={styles.filterButton}>
@@ -55,8 +51,8 @@ const FilterCard = ({ movieData, sendData, setModalVisible, modalVisible }) => {
     <View style={styles.filterContainer}>
       <TouchableOpacity onPress={() => {
         return (
-          sendData(movieData)
-          // handleClick()
+          sendData(movieData),
+          setModalVisible(!modalVisible)
         )
       }} >
         <View style={styles.filterButton}>
@@ -69,7 +65,7 @@ const FilterCard = ({ movieData, sendData, setModalVisible, modalVisible }) => {
         data={categoryData}
         keyExtractor={item => item.id}
       />
-    </View>
+    </View >
   );
 }
 export default FilterCard;

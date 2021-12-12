@@ -1,15 +1,11 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-const { width, height } = Dimensions.get('window');
-
-
 export default StyleSheet.create({
   container: {
     marginTop: 45,
     backgroundColor: "#fafafa",
     flex: 1,
   },
-
   title: {
     marginVertical: 5,
     fontSize: 30,
@@ -27,10 +23,7 @@ export default StyleSheet.create({
   },
   filterContainer: {
   },
-  modalButton: {
-
-  },
-  headerContainer: {
+    headerContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -42,6 +35,4 @@ export default StyleSheet.create({
     top: 0,
     flex: 1,
   }
-
-
 })

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, ActivityIndicator, Text, FlatList, ScrollView } from 'react-native';
+import { View, ActivityIndicator, Text, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import useFetch from "../../hooks/useFetch";

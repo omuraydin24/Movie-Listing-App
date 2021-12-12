@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity, Text, Image } from 'react-native';
+import { View, Text, Image } from 'react-native';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from './SuggestCard.style'
@@ -8,8 +8,6 @@ const SuggestCard = ({ data }) => {
   return (
     <View style={styles.main}>
       <View style={styles.movieContainer}>
-        {/* <TouchableOpacity onPress={onPress}>
-        </TouchableOpacity> */}
         <View>
           <View style={styles.imageContainer}>
             <Image style={styles.image} source={{ uri: "https://picsum.photos/200/300" }} />

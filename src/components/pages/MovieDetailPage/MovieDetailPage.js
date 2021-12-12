@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, ActivityIndicator, FlatList, ScrollView } from 'react-native';
+import React from 'react';
+import { FlatList, ScrollView } from 'react-native';
 
 import useFetch from '../../hooks/useFetch'
 import MovieDetailCard from "../../Cards/MovieDetailCard";
@@ -23,7 +23,7 @@ const MovieDetailPage = ({ route, navigation }) => {
         <FlatList
           horizontal
           renderItem={renderSuggests}
-          data={movieSuggestData.slice(0,4)}
+          data={movieSuggestData.slice(0, 4)}
           keyExtractor={item => item.id}
         />
       </MovieDetailCard>

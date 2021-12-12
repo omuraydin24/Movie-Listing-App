@@ -7,7 +7,6 @@ import CommentCard from "../CommentCard";
 
 const MovieDetailCard = ({ movieData, navigation, children, commentData }) => {
   const [modalVisible, setModalVisible] = useState(false);
-  console.log("commentData.comment", commentData[0])
   return (
     <View style={styles.mainContainer}>
       <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>

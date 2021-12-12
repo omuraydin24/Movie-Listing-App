@@ -6,7 +6,7 @@ import styles from './ListCard.style'
 
 const ListCard = ({ data, onPress }) => {
   return (
-    <View style={styles.main}>
+    <View>
       <View style={styles.movieContainer}>
         <TouchableOpacity onPress={onPress}>
           <View>

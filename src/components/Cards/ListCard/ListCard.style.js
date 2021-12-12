@@ -54,15 +54,7 @@ export default StyleSheet.create({
     height: height * 0.7,
     borderRadius: 30,
   },
-  // gap: {
-  //   width: width * 0.02,
-  //   height: height * 0.7,
-  //   opacity: 0,
-  // },
-  // main: {
-  //   flexDirection: "row",
-  // }
-
+ 
   imageContainer: {
     position: "relative"
   },
@@ -95,7 +87,5 @@ export default StyleSheet.create({
     height: 20,
     justifyContent: "center",
     margin: 3,
-
   }
-
 })

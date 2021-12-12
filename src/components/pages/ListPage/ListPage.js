@@ -22,8 +22,8 @@ const ListPage = ({ navigation }) => {
     data: movieData
   } = useFetch(URL)
 
-
   const [filter, setFilter] = useState(movieData)
+
   useEffect(() => {
     setFilter(movieData)
   }, [movieData])
@@ -94,6 +94,8 @@ const ListPage = ({ navigation }) => {
       </View>
 
       <View style={styles.listContainer}>
+        {/* FlatList can be used too. But lack of styling as of now  */}
+
         {/* <View style={styles.gap}></View> */}
         {/* <FlatList
           horizontal
@@ -109,7 +111,6 @@ const ListPage = ({ navigation }) => {
           itemWidth={width * 0.8}
         />
       </View>
-
     </SafeAreaView >
   );
 }
