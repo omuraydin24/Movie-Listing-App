@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import Navigation from './components/Navigation';
 
 /**
  * Selamlar. Sizlerden istenen IMDB benzeri bir film analiz uygulaması geliştirmenizdir.
@@ -20,5 +20,7 @@ import {View} from 'react-native';
  * */
 
 export default function App() {
-  return <View>{/* ... */}</View>;
+  return (
+    <Navigation />
+  );
 }
