@@ -1,3 +1,4 @@
-# İnavitas / Başarsoft React Native Bootcamp 4th Week Homework 
+# Movie Listing Applicaiton with React Native
 
-![App Screen Record](./Gif/ScreenRecord.gif)
+
+<img src="./Gif/ScreenRecord.gif" alt="Gif" width="250"/>
