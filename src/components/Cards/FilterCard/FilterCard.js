@@ -31,8 +31,6 @@ const FilterCard = ({ movieData, sendData, setModalVisible, modalVisible }) => {
     sendData(movieList)
   }
 
-
-
   const renderFilters = ({ item }) => {
     return (
       <TouchableOpacity onPress={() => {
